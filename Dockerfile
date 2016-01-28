@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:centos7
 
 ADD ./jpackage.repo /etc/yum.repos.d/jpackage.repo
 ADD ./answers.properties /etc/spacewalk/answers.properties
