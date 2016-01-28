@@ -2,14 +2,14 @@
 
 ##Overview
 
-An experiment to get [Spacewalk](http://spacewalk.redhat.com/) 2.2 running under Docker, as I wanted a quick means of running up the app to test stuff out. At the moment the application and the Postgres database all run within the same container. It'd be quite simple to split them out across separate containers and connect them together using --link and --volumes-from. 
+An experiment to get [Spacewalk](http://spacewalk.redhat.com/) 2.4 running under Docker, as I wanted a quick means of running up the app to test stuff out. At the moment the application and the Postgres database all run within the same container. It'd be quite simple to split them out across separate containers and connect them together using --link and --volumes-from. 
 
 ##Building the image
 
 Clone this repository, change into the source directory and run:
 
 ```
-docker build -t jamesnetherton/spacewalk:2.2 .
+docker build -t agreenbhm/spacewalk:2.4 .
 ```
 
 ##Running Spacewalk
@@ -17,7 +17,7 @@ docker build -t jamesnetherton/spacewalk:2.2 .
 To run Spacewalk do:
 
 ```
-docker run --name spacewalk jamesnetherton/spacewalk:2.2
+docker run --name spacewalk agreenbhm/spacewalk:2.4
 ```
 
 Then open a browser and hit the container IP address. You can determine the IP address by:
@@ -32,6 +32,7 @@ It takes a little while to initialise everything, so don't panic if initially yo
 The MIT License (MIT)
 
 Copyright (c) 2014 James Netherton
+Copyright (c) 2016 AGreen BHM
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
