@@ -8,7 +8,7 @@ RUN yum install --setopt=tsflags=nodocs -y http://dl.fedoraproject.org/pub/epel/
 RUN yum install --setopt=tsflags=nodocs -y spacewalk-setup-postgresql spacewalk-postgresql supervisor
 RUN spacewalk-setup --disconnected --answer-file=/etc/spacewalk/answers.properties
 
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD ./run-spacewalk.sh /usr/local/bin/run-spacewalk.sh
 
 EXPOSE 80
