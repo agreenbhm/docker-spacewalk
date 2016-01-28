@@ -32,6 +32,7 @@ It takes a little while to initialise everything, so don't panic if initially yo
 The MIT License (MIT)
 
 Copyright (c) 2014 James Netherton
+
 Copyright (c) 2016 AGreen BHM
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
